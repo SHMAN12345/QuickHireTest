@@ -32,4 +32,9 @@
         android:name="com.example.quickhiretest.ui.Insurance.InsuranceFragment"
         android:label="fragment_insurance"
         tools:layout="@layout/fragment_insurance" />
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.example.quickhiretest.ui.Profile.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" />
 </navigation>

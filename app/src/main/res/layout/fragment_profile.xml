@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+<layout >
 
     <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -38,7 +39,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="140dp"
-                    app:cardCornerRadius="15dp"
+                    app:cardCornerRadius="5dp"
                     app:cardElevation="10dp"
                     app:cardUseCompatPadding="true"
                     tools:layout_editor_absoluteX="-16dp"
@@ -50,11 +51,12 @@
                         android:layout_height="wrap_content"
                         android:text="A jobseeker who are more patient for the work"
                         android:textColor="@color/black"
-                        android:textSize="20sp"
+                        android:textSize="15sp"
                         android:textStyle="bold" />
 
 
                 </androidx.cardview.widget.CardView>
+
 
 
             </LinearLayout>
@@ -63,12 +65,13 @@
             <LinearLayout
                 android:id="@+id/linearLayout2"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/imageProfile">
+                app:layout_constraintTop_toBottomOf="@id/imageProfile"
+                android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:cardCornerRadius="15dp"
                     app:cardElevation="10dp"
@@ -76,82 +79,174 @@
                     tools:layout_editor_absoluteX="-16dp"
                     tools:layout_editor_absoluteY="171dp">
 
+
+                    <ImageButton
+                        android:id="@+id/edit_detail"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="#0000FFFF"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/baseline_edit_24" />
+
                     <TextView
                         android:id="@+id/name"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="Ong Shen Hoi"
                         android:textColor="@color/black"
                         android:textSize="20sp"
+                        android:layout_marginStart="10dp"
                         app:layout_constraintStart_toStartOf="parent" />
 
                     <TextView
-                        android:id="@+id/currentJob"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Current Job : Engineer "
-                        android:layout_marginTop="100dp"
+                        android:id="@+id/currentJobTag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Current Job :  "
+                        android:layout_marginTop="50dp"
+                        android:layout_marginStart="10dp"
                         android:textColor="@color/black"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:id="@+id/currentJob"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Engineer "
+                        android:textColor="@color/black"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginStart="150dp"
                         android:textSize="20sp" />
 
+                    <TextView
+                        android:id="@+id/statedTag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Stated :"
+                        android:layout_marginTop="100dp"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                       />
 
                     <TextView
                         android:id="@+id/stated"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Stated : Kuala Lumpur"
+                        android:text="Kuala Lumpur"
+                        android:layout_marginTop="100dp"
+                        android:layout_marginStart="150dp"
                         android:textColor="@color/black"
                         android:textSize="20sp"
-                        app:layout_constraintTop_toBottomOf="@id/currentJob"/>
+                       />
 
+
+                    <TextView
+                        android:id="@+id/TimePreferTag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Time Prefered :  "
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:layout_marginTop="150dp"
+                        android:layout_marginStart="10dp"
+                        />
 
                     <TextView
                         android:id="@+id/TimePrefer"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Time Prefered : 10 am "
+                        android:text="10 am "
                         android:textColor="@color/black"
                         android:textSize="20sp"
-                        app:layout_constraintTop_toBottomOf="@id/stated"
+                        android:layout_marginTop="150dp"
+                        android:layout_marginStart="150dp"
                         />
+
+                    <TextView
+                        android:id="@+id/EmailTag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email :"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:layout_marginTop="200dp"
+                        android:layout_marginStart="10dp"/>
 
                     <TextView
                         android:id="@+id/Email"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Email : ong@gmail.com"
+                        android:text="ong@gmail.com"
                         android:textColor="@color/black"
                         android:textSize="20sp"
-                        app:layout_constraintTop_toBottomOf="@id/TimePrefer"/>
+                        android:layout_marginTop="200dp"
+                        android:layout_marginStart="150dp"/>
+
+                    <TextView
+                        android:id="@+id/ContactNumberTag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Contact  :"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:layout_marginTop="250dp"
+                        android:layout_marginStart="10dp"/>
 
                     <TextView
                         android:id="@+id/ContactNumber"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Contact Number : 017-6468809"
+                        android:text="017-6468809"
                         android:textColor="@color/black"
                         android:textSize="20sp"
-                        app:layout_constraintTop_toBottomOf="@id/Email"/>
+                        android:layout_marginTop="250dp"
+                        android:layout_marginStart="150dp"/>
 
 
+
+                    <TextView
+                        android:id="@+id/educationalTag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Educational "
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:layout_marginTop="300dp"
+                        android:layout_marginStart="10dp"/>
 
                     <TextView
                         android:id="@+id/educational"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Educational : Diploma"
+                        android:text=" Diploma"
                         android:textColor="@color/black"
                         android:textSize="20sp"
-                        app:layout_constraintTop_toBottomOf="@id/ContactNumber"/>
+                        android:layout_marginTop="300dp"
+                        android:layout_marginStart="150dp"/>
+
+                    <TextView
+                        android:id="@+id/skillTag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Skill :"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:layout_marginTop="350dp"
+                        android:layout_marginStart="10dp"/>
 
                     <TextView
                         android:id="@+id/skill"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Skill : Enginner"
+                        android:text="Enginner"
                         android:textColor="@color/black"
                         android:textSize="20sp"
-                        app:layout_constraintTop_toBottomOf="@id/educational"/>
+                        android:layout_marginTop="350dp"
+                        android:layout_marginLeft="150dp"/>
 
 
 
