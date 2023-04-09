@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">QuickHireTest</string>
+    <string name="title_home">Home</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    //BMI
+    <string name="bmi">Body Mass Index</string>
+    <string name="status">Status</string>
+    <string name="under">Underweight</string>
+    <string name="normal">Normal</string>
+    <string name="over">Overweight</string>
+    <string name="hint_weight">Enter weight (kg)</string>
+    <string name="hint_height">Enter height (cm)</string>
+    <string name="calculate">Calculate</string>
+    <string name="reset">Reset</string>
+    <string name="value_required">Value Required</string>
+
+    //Insurance
+    <string name="age">Age</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="smoker">I am a smoker</string>
+    <string name="premium">Premium</string>
+    <string name="extra_premium">Extra Premium</string>
+    <string name="total">Total</string>
+    <string-array name="age_group">
+        <item>Less than 17</item>
+        <item>17 to 25</item>
+        <item>26 to 30</item>
+        <item>31 to 40</item>
+        <item>41 to 55</item>
+        <item>More than 55</item>
+    </string-array>
+
+    //Profile
+    <string name="title_profile">Profile</string>
+
+    //Inbox
+    <string name="title_inbox">Inbox</string>
+
+
+</resources>
