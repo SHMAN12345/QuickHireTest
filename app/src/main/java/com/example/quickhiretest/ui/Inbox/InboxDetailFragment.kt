@@ -10,10 +10,11 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.quickhiretest.R
 import com.example.quickhiretest.databinding.FragmentEditProfileBinding
 import com.example.quickhiretest.databinding.FragmentInboxBinding
+import com.example.quickhiretest.databinding.FragmentInboxDetailBinding
 
 
 class InboxDetailFragment : Fragment() {
-    private var _binding: FragmentEditProfileBinding? = null
+    private var _binding: FragmentInboxDetailBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -27,7 +28,7 @@ class InboxDetailFragment : Fragment() {
         val notificationsViewModel =
             ViewModelProvider(this).get(InboxViewModel::class.java)
 
-        _binding = FragmentEditProfileBinding.inflate(inflater, container, false)
+        _binding = FragmentInboxDetailBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
 
