@@ -93,7 +93,6 @@
                     tools:layout_editor_absoluteX="-16dp"
                     tools:layout_editor_absoluteY="171dp">
 
-
                     <ImageButton
                         android:id="@+id/edit_detail"
                         android:layout_width="25dp"

@@ -33,8 +33,13 @@
         android:label="fragment_insurance"
         tools:layout="@layout/fragment_insurance" />
     <fragment
-        android:id="@+id/editProfileFragment"
+        android:id="@+id/nav_editProfile"
         android:name="com.example.quickhiretest.ui.Profile.EditProfileFragment"
         android:label="fragment_edit_profile"
         tools:layout="@layout/fragment_edit_profile" />
+    <fragment
+        android:id="@+id/nav_inboxDetail"
+        android:name="com.example.quickhiretest.ui.Inbox.InboxDetailFragment"
+        android:label="fragment_inbox_detail"
+        tools:layout="@layout/fragment_inbox_detail" />
 </navigation>
