@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <ScrollView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:layout_editor_absoluteX="1dp"
@@ -223,6 +222,16 @@
                     android:drawableStart="@drawable/baseline_edit_24"
                     android:hint="  Time Prefer">
 
+                    <Spinner
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/baseline_edit_24"
+                        android:layout_weight="1"
+                        android:hint="Time Prefer"
+                        android:entries="@array/time_prefer" />
+
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/preferTimeEdit"
                         android:layout_width="350dp"
@@ -231,6 +240,8 @@
                         android:inputType="date" />
 
                 </com.google.android.material.textfield.TextInputLayout>
+
+
 
             </LinearLayout>
 
