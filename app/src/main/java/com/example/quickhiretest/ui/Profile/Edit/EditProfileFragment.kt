@@ -1,21 +1,22 @@
-package com.example.quickhiretest.ui.Profile
+package com.example.quickhiretest.ui.Profile.Edit
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.lifecycle.ViewModelProvider
-import com.example.quickhiretest.R
+import androidx.navigation.NavController
+import androidx.recyclerview.widget.RecyclerView
 import com.example.quickhiretest.databinding.FragmentEditProfileBinding
-import com.example.quickhiretest.databinding.FragmentProfileBinding
+import com.example.quickhiretest.ui.Profile.ProfileViewModel
+import com.google.firebase.auth.FirebaseAuth
+import java.util.ArrayList
 
 
 class EditProfileFragment : Fragment() {
     private var _binding: FragmentEditProfileBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
 
     override fun onCreateView(
