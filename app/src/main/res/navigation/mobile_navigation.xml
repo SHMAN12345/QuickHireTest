@@ -36,7 +36,11 @@
         android:id="@+id/nav_editProfile"
         android:name="com.example.quickhiretest.ui.Profile.Edit.EditProfileFragment"
         android:label="fragment_edit_profile"
-        tools:layout="@layout/fragment_edit_profile" />
+        tools:layout="@layout/fragment_edit_profile" >
+        <action
+            android:id="@+id/action_nav_editProfile_to_nav_profile"
+            app:destination="@id/nav_profile" />
+    </fragment>
     <fragment
         android:id="@+id/nav_inboxDetail"
         android:name="com.example.quickhiretest.ui.Inbox.InboxDetailFragment"

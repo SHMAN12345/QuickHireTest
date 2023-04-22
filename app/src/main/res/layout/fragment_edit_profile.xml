@@ -46,7 +46,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         app:srcCompat="@drawable/images"
-                        android:contentDescription="imageView" />
+                        android:contentDescription="@string/des_imageview" />
 
 
                 </androidx.cardview.widget.CardView>
@@ -63,7 +63,7 @@
                 android:layout_below="@+id/layoutPhoto"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
-                android:text="Change Photo"
+                android:text="@string/change_photo"
                 android:textAlignment="center"
                 android:textColor="@color/blue1"
                 android:textSize="16sp" />
@@ -75,7 +75,7 @@
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="191dp"
                 android:layout_marginBottom="18dp"
-                android:text="Personal Detail"
+                android:text="@string/personal_detail"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
@@ -92,7 +92,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="25dp"
                     android:drawableStart="@drawable/baseline_edit_24"
-                    android:hint="  Name">
+                    android:hint="@string/name">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/inputName"
@@ -116,7 +116,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="25dp"
                     android:drawableStart="@drawable/baseline_edit_24"
-                    android:hint="  E-mail">
+                    android:hint="@string/e_mail">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/inputMail"
@@ -141,7 +141,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="25dp"
                     android:drawableStart="@drawable/baseline_edit_24"
-                    android:hint="  Phone Number">
+                    android:hint="@string/phone_number">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/inputPhone"
@@ -168,7 +168,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="25dp"
                     android:drawableStart="@drawable/baseline_edit_24"
-                    android:hint="  Stated">
+                    android:hint="@string/stated">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/statedEdit"
@@ -194,7 +194,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="25dp"
                     android:drawableStart="@drawable/baseline_edit_24"
-                    android:hint="  Current Job">
+                    android:hint="@string/current_job">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/currentJobEdit"
@@ -220,7 +220,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="25dp"
                     android:drawableStart="@drawable/baseline_edit_24"
-                    android:hint="  Time Prefer">
+                    android:hint="@string/time_prefer">
 
                     <Spinner
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -229,7 +229,7 @@
                         android:layout_height="wrap_content"
                         android:drawableStart="@drawable/baseline_edit_24"
                         android:layout_weight="1"
-                        android:hint="Time Prefer"
+                        android:hint="@string/time_prefer"
                         android:entries="@array/time_prefer" />
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -258,7 +258,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="25dp"
                     android:drawableStart="@drawable/baseline_edit_24"
-                    android:hint="  Education">
+                    android:hint="@string/education">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/educationEdit"
@@ -284,7 +284,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="25dp"
                     android:drawableStart="@drawable/baseline_edit_24"
-                    android:hint="  Skill">
+                    android:hint="@string/skill">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/skillEdit"
@@ -312,7 +312,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="25dp"
                     android:layout_marginBottom="18dp"
-                    android:text="Personal Description"
+                    android:text="@string/personal_description"
                     android:textColor="@color/black"
                     android:textSize="16sp" />
 
@@ -331,7 +331,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="25dp"
                     android:drawableStart="@drawable/baseline_edit_24"
-                    android:hint="  Something about yourself">
+                    android:hint="@string/something_about_yourself">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/inputDes"
@@ -352,7 +352,7 @@
                 android:layout_below="@+id/headline"
                 android:layout_marginStart="75dp"
                 android:layout_marginTop="41dp"
-                android:text="Done"
+                android:text="@string/done"
                 app:cornerRadius="20dp"
                 app:strokeColor="@color/green"
                 android:textColor="@color/green"
@@ -364,9 +364,9 @@
                 android:layout_width="95dp"
                 android:layout_height="50dp"
                 android:layout_below="@+id/headline"
-                android:layout_marginLeft="235dp"
+                android:layout_marginStart="235dp"
                 android:layout_marginTop="41dp"
-                android:text="Cancel"
+                android:text="@string/cancel"
                 app:cornerRadius="20dp"
                 app:strokeColor="@color/red"
                 android:textColor="@color/red"/>

@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "933212486365",
+    "firebase_url": "https://quickhiretest-default-rtdb.asia-southeast1.firebasedatabase.app",
     "project_id": "quickhiretest",
     "storage_bucket": "quickhiretest.appspot.com"
   },

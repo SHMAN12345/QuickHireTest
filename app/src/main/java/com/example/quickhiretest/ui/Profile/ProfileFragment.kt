@@ -1,14 +1,12 @@
 package com.example.quickhiretest.ui.Profile
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
@@ -17,8 +15,7 @@ import com.example.quickhiretest.R
 import com.example.quickhiretest.databinding.FragmentProfileBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
-import java.lang.Exception
-import java.util.ArrayList
+
 
 class ProfileFragment : Fragment() {
 
@@ -53,6 +50,8 @@ class ProfileFragment : Fragment() {
 
     //firebase auth
     private lateinit var auth: FirebaseAuth
+
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -92,11 +91,13 @@ class ProfileFragment : Fragment() {
                     val state = snapshot.child("state").value as String
                     val currentJob = snapshot.child("job").value as String
                     val email = snapshot.child("email").value as String
-                    val phone = snapshot.child("phone").value as String
+                    var phone = snapshot.child("phone").value as String
                     val timePrefer = snapshot.child("time").value as String
                     val education=snapshot.child("education").value as String
                     val skill=snapshot.child("skill").value as String
                     val profilePic = snapshot.child("profilePic").value as String
+
+
 
                     //set data
                     binding.name.text = name
@@ -113,7 +114,7 @@ class ProfileFragment : Fragment() {
                     try{
                         Glide.with(requireContext())
                             .load(profilePic)
-                            .placeholder(R.drawable.profileUnknown)
+                            .placeholder(R.drawable.profileunknown)
                             .into(binding.imageProfile)
                     }catch (e: Exception){
 
@@ -130,6 +131,28 @@ class ProfileFragment : Fragment() {
         }
         dataRef.addListenerForSingleValueEvent(eventListener)
     }
+
+//    fun onDataChange(dataSnapshot: DataSnapshot) {
+//        for (keyId in dataSnapshot.children) {
+//            if (keyId.child("email").value == email) {
+//                fname = keyId.child("fullName").getValue<String>(String::class.java)
+//                profession = keyId.child("profession").getValue<String>(String::class.java)
+//                workplace = keyId.child("workplace").getValue<String>(String::class.java)
+//                phone = keyId.child("phone").getValue<String>(String::class.java)
+//                facebook = keyId.child("facebook").getValue<String>(String::class.java)
+//                twitter = keyId.child("twitter").getValue<String>(String::class.java)
+//                break
+//            }
+//        }
+//        nameTxtView.setText(fname)
+//        emailTxtView.setText(email)
+//        occupationTxtView.setText(profession)
+//        workTxtView.setText(workplace)
+//        phoneTxtView.setText(phone)
+//        videoTxtView.setText(phone)
+//        facebookTxtView.setText(facebook)
+//        twitterTxtView.setText(twitter)
+//    }
 
 //    private fun loadSkill(){
 //        val currentUser = FirebaseAuth.getInstance().currentUser
