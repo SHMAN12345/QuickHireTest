@@ -29,10 +29,8 @@ class InboxDetailFragment : Fragment() {
             ViewModelProvider(this).get(InboxViewModel::class.java)
 
         _binding = FragmentInboxDetailBinding.inflate(inflater, container, false)
-        val root: View = binding.root
 
-
-        return root
+        return binding.root
     }
 
     override fun onDestroyView() {
