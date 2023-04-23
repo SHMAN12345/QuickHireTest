@@ -46,4 +46,14 @@
         android:name="com.example.quickhiretest.ui.Inbox.InboxDetailFragment"
         android:label="fragment_inbox_detail"
         tools:layout="@layout/fragment_inbox_detail" />
+    <fragment
+        android:id="@+id/nav_addData"
+        android:name="com.example.quickhiretest.ui.addData.AddDataFragment"
+        android:label="fragment_add_data"
+        tools:layout="@layout/fragment_add_data" />
+    <fragment
+        android:id="@+id/nav_uploadData"
+        android:name="com.example.quickhiretest.ui.addData.UploadFragment"
+        android:label="fragment_upload"
+        tools:layout="@layout/fragment_upload" />
 </navigation>
