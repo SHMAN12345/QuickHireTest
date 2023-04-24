@@ -7,6 +7,16 @@
     android:orientation="vertical"
     tools:context=".ui.addData.DetailFragment">
 
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:background="#0000FFFF"
+        android:scaleType="fitCenter"
+        android:src="@drawable/baseline_arrow_back_24" />
+
     <TextView
         android:id="@+id/detailTitle"
         android:layout_width="wrap_content"
